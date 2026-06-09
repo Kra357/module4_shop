@@ -2,12 +2,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* background-image: url(../img/главная\ страница.png); */
-  background-size: cover; /* покрывает весь экран */
-  background-repeat: no-repeat; /* не повторяет */
-  background-attachment: fixed; /* фиксирует фон (опционально) */
-  text-decoration: none; /* убирает подчёркивание */
-  color: black; /* меняет цвет на чёрный */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-decoration: none;
+  color: black;
 }
 
 body {
@@ -15,6 +14,7 @@ body {
   background-color: rgba(255, 255, 255, 1);
   font-family: "Inter", sans-serif;
 }
+
 .header-events {
   display: flex;
   width: 100%;
@@ -49,6 +49,7 @@ body {
 .mainMenu a {
   text-decoration: none;
 }
+
 hr {
   border: 0.1vw solid black;
   margin: 0 2vw;
@@ -56,28 +57,284 @@ hr {
 }
 
 .main-content {
-  border: 0.1vw solid black;
   margin-right: 2vw;
   margin-left: 2vw;
   margin-top: 3.6vw;
   width: 100%;
-  height: 43vw;
+  height: 41vw;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  overflow: hidden;
 }
 
 .card-one {
-  border: 0.1vw solid black;
-  width: 40vw;
-  height: 43vw;
+  border: 0.2vw solid black;
+  width: 39vw;
+  height: 41vw;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2vw;
+  position: relative;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 1);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  flex-shrink: 0;
+  overflow: hidden;
 }
 
-.color-card {
-  border: 0.1vw solid black;
-  height: 20vw;
+.card-two {
+  border: 0.2vw solid black;
+  width: 35vw;
+  height: 41vw;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2vw;
+  position: relative;
+  z-index: 1;
+  margin-left: -10vw;
+  background-color: rgba(255, 255, 255, 1);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.card-three {
+  border: 0.2vw solid black;
+  width: 39vw;
+  height: 41vw;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2vw;
+  position: relative;
+  z-index: 0;
+  background-color: rgba(255, 255, 255, 1);
+  margin-left: -7vw;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.color-stretch {
   width: 100%;
+  height: 31vw;
   background-color: rgba(255, 238, 0, 1);
+  border-radius: 2vw 2vw 0 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
-.color-card img {
+.color-stretch-two {
   width: 100%;
-  height: 10vw;
+  height: 31vw;
+  background-color: rgba(250, 59, 47, 1);
+  border-radius: 1.85vw 1.85vw 0 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
+
+.color-stretch-three {
+  width: 100%;
+  height: 31vw;
+  background-color: rgba(26, 165, 239, 1);
+  border-radius: 1.85vw 1.85vw 0 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+
+.img-wrapper {
+  width: 39vw;
+  height: 31vw;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.img-wrapper-two {
+  width: 35vw;
+  height: 31vw;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.img-wrapper-three {
+  width: 39vw;
+  height: 31vw;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+
+.color-card,
+.color-two,
+.color-three {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.card-one p {
+  font-size: 2.6vw;
+  text-align: center;
+  margin-top: 1vw;
+  font-weight: 300;
+}
+
+.card-two p {
+  font-size: 2.6vw;
+  text-align: center;
+  margin-top: 2vw;
+  font-weight: 300;
+}
+
+.card-three p {
+  position: relative;
+  font-size: 2.6vw;
+  text-align: center;
+  margin-top: 2vw;
+  font-weight: 300;
+}
+
+.main-content.has-hover .card-one.active,
+.main-content.has-hover .card-two.active,
+.main-content.has-hover .card-three.active {
+  z-index: 10;
+}
+
+.main-content.has-hover .card-one.active {
+  width: 42vw;
+  transform: translateX(3vw);
+}
+
+.main-content.has-hover .card-two.under {
+  width: 33vw;
+  margin-left: -12vw;
+  z-index: 1;
+}
+
+.main-content.has-hover .card-three.under {
+  width: 33vw;
+  margin-left: -9vw;
+  z-index: 0;
+}
+
+.main-content.has-hover .card-two.active {
+  width: 38vw;
+  transform: translateX(1vw);
+  margin-left: -8vw;
+}
+
+.main-content.has-hover .card-one.under {
+  width: 33vw;
+  z-index: 0;
+}
+
+.main-content.has-hover .card-three.under {
+  width: 33vw;
+  margin-left: -9vw;
+  z-index: 0;
+}
+
+.main-content.has-hover .card-three.active {
+  width: 42vw;
+  transform: translateX(1vw);
+}
+
+
+.main-content.has-hover .card-one.under {
+  width: 33vw;
+  z-index: 0;
+}
+
+.main-content.has-hover .card-two.middle {
+  width: 33vw;
+  margin-left: -12vw;
+  z-index: 1;
+}
+
+
+.twohr {
+  margin-top: 3.5vw;
+}
+
+.bottom-margin {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-left: 2vw;
+  font-size: 2.8vw;
+  margin-right: 2vw;
+  justify-content: space-between;
+  gap: 2.8vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+
+.better-name {
+  font-size: 3.5vw;
+}
+
+.menu-item {
+  position: relative;
+  display: inline-block;
+}
+
+.hand-drawn {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: auto;    
+  height: 270%;     
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  object-fit: contain;
+}
+
+.hand-drawn-1 {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: auto;    
+  height: 270%;     
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  object-fit: contain;
+}
+
+.hand-drawn3 {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: auto;    
+  height: 270%;     
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  object-fit: contain;
+}
+
+.menu-item:hover .hand-drawn {
+  opacity: 1;
+}
+
+.menu-item:hover .hand-drawn-1 {
+  opacity: 1;
+}
+
+.menu-item:hover .hand-drawn3 {
+  opacity: 1;
+}
+
+
+
+
