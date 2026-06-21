@@ -261,18 +261,37 @@ hr {
 .twohr {
   margin-top: 3.5vw;
 }
-
 .bottom-margin {
-  display: flex;
-  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  margin-left: 2vw;
-  font-size: 2.8vw;
-  margin-right: 2vw;
-  justify-content: space-between;
-  gap: 2.8vw;
+
+  width: 100%;
+  padding: 0 2vw;
   margin-top: 2vw;
   margin-bottom: 2vw;
+
+  font-size: 2.8vw;
+}
+
+.number {
+  justify-self: start;
+}
+
+.better-name {
+  justify-self: center;
+  font-size: 3.5vw;
+  white-space: nowrap;
+}
+
+.telegram-channel {
+  justify-self: end;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.bottom-margin p {
+  margin: 0;
 }
 
 .better-name {
@@ -335,6 +354,245 @@ hr {
   opacity: 1;
 }
 
+.support-page {
+  padding: 3.8vw 2vw 0;
+}
+
+.support-hero {
+  position: relative;
+  width: 100%;
+  height: 36vw;
+  border: 0.18vw solid black;
+  border-radius: 0.9vw;
+  overflow: hidden;
+}
+
+.support-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.support-contact {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 47vw;
+  min-height: 18vw;
+  transform: translate(-50%, -50%);
+  background: white;
+  border: 0.18vw solid black;
+  border-radius: 0.4vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.support-phone,
+.support-mail {
+  font-size: 4.2vw;
+  line-height: 1.05;
+  font-weight: 400;
+}
+
+.support-small {
+  margin-top: 1.2vw;
+  font-size: 1.9vw;
+  line-height: 0.95;
+  text-align: center;
+}
+
+.reviews-section {
+  margin-top: 3vw;
+}
+
+.reviews-section h1 {
+  font-size: 3vw;
+  font-weight: 500;
+  margin-bottom: 1.6vw;
+}
+
+.review-form {
+  position: relative;
+  width: 100%;
+  height: 12.5vw;
+  border: 0.18vw solid black;
+  border-radius: 0.8vw;
+  overflow: hidden;
+}
+
+.review-form textarea {
+  width: 100%;
+  height: 100%;
+  border: none;
+  resize: none;
+  padding: 1.3vw 1.6vw;
+  font-family: inherit;
+  font-size: 1.8vw;
+  outline: none;
+  font-weight: 300;
+}
+
+.review-form textarea::placeholder {
+  color: #999;
+}
+
+.review-form button {
+  position: absolute;
+  right: 1.5vw;
+  bottom: 1.5vw;
+  width: 13.5vw;
+  height: 3.4vw;
+  border: 0.16vw solid #888;
+  border-radius: 0.4vw;
+  background: #9ed8f7;
+  color: #888;
+  font-family: inherit;
+  font-size: 1.4vw;
+  cursor: pointer;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.7vw;
+  margin-top: 1.5vw;
+}
+
+.review-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 26vw;
+  border: 0.18vw solid black;
+  border-radius: 0.7vw;
+  overflow: hidden;
+  background: white;
+}
+
+.review-text {
+  flex: 1;
+  padding: 1.5vw;
+  color: #999;
+  font-size: 1.65vw;
+  line-height: 1.05;
+  font-weight: 300;
+}
+
+.stars {
+  padding: 0 1.5vw 1vw;
+  color: #fff000;
+  font-size: 3.2vw;
+  line-height: 1;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.review-name {
+  padding: 0.7vw 1.5vw;
+  font-size: 1.8vw;
+  border-top: 0.12vw solid transparent;
+}
+
+.red {
+  background: #ff332b;
+}
+
+.blue {
+  background: #22a8e8;
+}
+
+.green {
+  background: #29aa32;
+}
+
+.purple {
+  background: #d7b1e8;
+}
+
+.twohr {
+  margin: 2.6vw 0 0;
+}
+
+.bottom-margin {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  width: 100%;
+  padding: 2vw 0;
+  font-size: 2.8vw;
+}
+
+.number {
+  justify-self: start;
+}
+
+.better-name {
+  justify-self: center;
+  font-size: 3.4vw;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.telegram-channel {
+  justify-self: end;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.bottom-margin p {
+  margin: 0;
+}
+
+.support-hero {
+  position: relative;
+  width: 100%;
+  height: 36vw;
+  border: 0.18vw solid black;
+  border-radius: 0.9vw;
+  overflow: hidden;
+  background-color: #ffee00;
+}
 
 
+.draw-canvas {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  cursor: crosshair;
+  touch-action: none;
+}
 
+.support-contact {
+  z-index: 3;
+}
+
+.review-form button {
+  position: absolute;
+  right: 1.5vw;
+  bottom: 1.5vw;
+  width: 13.5vw;
+  height: 3.4vw;
+  border: 0.16vw solid #888;
+  border-radius: 0.4vw;
+  background: #9ed8f7;
+  color: #888;
+  font-family: inherit;
+  font-size: 1.4vw;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.review-form button.is-active {
+  background: #1aa5ef;
+  color: black;
+  border-color: black;
+}
+.menu-item.active .hand-drawn,
+.menu-item.active .hand-drawn-1,
+.menu-item.active .hand-drawn3 {
+  opacity: 1;
+}
