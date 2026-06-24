@@ -1308,7 +1308,7 @@
 
 }
 
-/* iPad вертикально: каталог */
+/* айпад вертикально: каталог */
 
 @media screen and (min-width: 481px) and (max-width: 1279px) and (orientation: portrait) {
   .catalog-content {
@@ -1437,7 +1437,7 @@
   }
 }
 
-/* iPad вертикально: акции */
+/* айпадик вертикально: акции */
 
 @media screen and (min-width: 481px) and (max-width: 1279px) and (orientation: portrait) {
   .sales-content {
@@ -1571,7 +1571,7 @@
   }
 }
 
-/* iPad вертикально: товары месяца */
+/* айпад вертикально: товары месяца */
 
 @media screen and (min-width: 481px) and (max-width: 1279px) and (orientation: portrait){
   .goods-month-page {
@@ -1741,7 +1741,7 @@
   }
 }
 
-/* iPad вертикально: события */
+/* айпад вертикально: события */
 
 @media screen and (min-width: 481px) and (max-width: 1279px) and (orientation: portrait) {
   .events-page {
@@ -1899,7 +1899,7 @@
     min-height: 0;
     margin: 0 0 0.35vw;
     padding: 0;
-    font-size: 2.3vw;
+    font-size: 2.6vw;
     line-height: 0.95;
   }
 
@@ -1909,7 +1909,7 @@
     padding: 0.45vw 1.5vw;
     border: 0.22vw solid black;
     border-radius: 0.5vw;
-    font-size: 2.3vw;
+    font-size: 3vw;
     line-height: 1;
     background: white;
   }
@@ -2394,5 +2394,57 @@
   .designer-card .event-full a {
     margin-top: 2.8vw;
     margin-bottom: 0;
+  }
+}
+
+/* делаю подчеркивание у апйада (блин... забыл) */
+@media screen and (min-width: 481px) and (max-width: 1279px) and (orientation: portrait) {
+  .menu-item.active a {
+    text-decoration: underline;
+    text-underline-offset: 0.35vw;
+    text-decoration-thickness: 0.18vw;
+  }
+
+  .menu-item.active img {
+    display: none;
+  }
+}
+
+/* блин вспомнил! */
+@media screen and (min-width: 481px) and (max-width: 1279px) and (orientation: portrait) {
+  .designer-card.is-open .event-full {
+    padding: 2.2vw 2vw 3vw;
+  }
+
+  .designer-card .event-full p {
+    font-size: 2.7vw;
+    line-height: 1.08;
+    margin-bottom: 0.9vw;
+  }
+
+  .designer-card .event-full a {
+    margin-top: 2vw;
+    margin-bottom: 0;
+
+    min-width: 20vw;
+    min-height: 4.6vw;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0.7vw 2vw;
+    font-size: 2.4vw;
+    line-height: 1;
+
+    border: 0.25vw solid black;
+    border-radius: 0.55vw;
+    box-sizing: border-box;
+
+    
+  }
+
+  .designer-card.is-open {
+    height: 78vw;
   }
 }
