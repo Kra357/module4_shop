@@ -60,7 +60,7 @@ if (cards.length && container) {
     });
   });
 
-  isMobile.addEventListener("change", resetCards);
+ const isMobile = window.matchMedia("(max-width: 600px), (max-width: 1024px) and (orientation: portrait)");
 }
 
 // рисование в поддержке
@@ -342,7 +342,8 @@ if (catalogCards.length && catalogContainer) {
       openMobileCatalogCard(card);
     });
   });
-  isMobile.addEventListener("change", resetCatalogCards);
+ const isMobile = window.matchMedia("(max-width: 600px), (max-width: 1024px) and (orientation: portrait)");
+  
 }
 
 // карточки в мужском и женском
@@ -396,7 +397,7 @@ if (genderCards.length && genderGrid) {
       openMobileGenderCard(card);
     });
   });
-  isMobile.addEventListener("change", resetGenderCards);
+ const isMobile = window.matchMedia("(max-width: 600px), (max-width: 1024px) and (orientation: portrait)");
 }
 
 // рисование на карточках сотрудников
@@ -537,6 +538,6 @@ if (salesCards.length && salesContainer) {
       openMobileSalesCard(card);
     });
   });
-  isMobile.addEventListener("change", resetSalesCards);
+  const isMobile = window.matchMedia("(max-width: 600px), (max-width: 1024px) and (orientation: portrait)");
 }
 

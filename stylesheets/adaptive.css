@@ -1110,3 +1110,1234 @@
   }
 }
 
+
+@media screen and (min-width: 481px) and (max-width: 1279px) and (orientation: portrait) {
+  /* айпад вертикально главная */
+  .header-events {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 2vw 3.5vw 0;
+  }
+
+  .header-menu-left,
+  .header-menu {
+    display: flex;
+    gap: 5vw;
+    font-size: 2.9vw;
+    line-height: 1;
+  }
+
+  .header-menu {
+    justify-content: flex-end;
+  }
+
+  .mainMenu {
+    font-size: 6vw;
+    line-height: 1;
+    margin: 0;
+    text-align: center;
+  }
+
+  .hand-drawn,
+  .hand-drawn-1,
+  .hand-drawn3 {
+    display: none;
+  }
+
+  hr {
+    margin: 2vw 3.5vw 0;
+    border: 0.15vw solid black;
+  }
+
+  .main-content {
+    position: relative;
+    display: block;
+    width: auto;
+    height: 118vw;
+    margin: 5vw 3.5vw 0;
+    overflow: visible;
+  }
+
+  .card-one,
+  .card-two,
+  .card-three {
+    position: absolute;
+    width: 56vw;
+    height: 62vw;
+    margin: 0;
+    border: 4vw solid black;
+    border-radius: 4vw;
+    overflow: hidden;
+    background: white;
+    transform: none;
+    transition:
+      transform 0.35s ease,
+      z-index 0.35s ease;
+  }
+
+  .card-one {
+    left: 0;
+    top: 0vw;
+    z-index: 3;
+  }
+
+  .card-two {
+    right: 0;
+    top: 12vw;
+    z-index: 2;
+  }
+
+  .card-three {
+    left: 8vw;
+    top: 54vw;
+    z-index: 1;
+  }
+
+  .color-stretch,
+  .color-stretch-two,
+  .color-stretch-three {
+    height: 46vw;
+    border-radius: 2.8vw 2.8vw 0 0;
+  }
+
+  .img-wrapper,
+  .img-wrapper-two,
+  .img-wrapper-three {
+    width: 100%;
+    height: 46vw;
+  }
+
+  .color-card,
+  .color-two,
+  .color-three {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .card-one p,
+  .card-two p,
+  .card-three p {
+    margin-top: 2.2vw;
+    font-size: 3.6vw;
+    line-height: 0.85;
+    text-align: center;
+    font-weight: 300;
+  }
+
+  .card-one,
+.card-two,
+.card-three {
+  border: 0.35vw solid black;
+}
+
+  .main-content.mobile-active .card-one,
+  .main-content.mobile-active .card-two,
+  .main-content.mobile-active .card-three {
+    height: 62vw;
+  }
+
+  .main-content.mobile-active .card-one.mobile-open,
+  .main-content.mobile-active .card-two.mobile-open,
+  .main-content.mobile-active .card-three.mobile-open {
+    z-index: 20;
+    transform: translateY(-2vw) scale(1.03);
+  }
+
+  .main-content.mobile-active .card-one:not(.mobile-open),
+  .main-content.mobile-active .card-two:not(.mobile-open),
+  .main-content.mobile-active .card-three:not(.mobile-open) {
+    transform: scale(0.98);
+  }
+
+  .main-content.has-hover .card-one.active,
+  .main-content.has-hover .card-two.active,
+  .main-content.has-hover .card-three.active,
+  .main-content.has-hover .card-one.under,
+  .main-content.has-hover .card-two.under,
+  .main-content.has-hover .card-three.under,
+  .main-content.has-hover .card-two.middle {
+    width: 56vw;
+    margin-left: 0;
+  }
+
+  .twohr {
+    margin: 4vw 3.5vw 0;
+  }
+
+  .bottom-margin {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 2vw 3.5vw 3vw;
+    margin: 0;
+    font-size: 2.7vw;
+  }
+
+  .better-name {
+    font-size: 3vw;
+    white-space: nowrap;
+  }
+
+  .telegram-channel {
+    justify-self: end;
+    text-align: right;
+  }
+   .card-one p,
+  .card-two p,
+  .card-three p {
+    height: 16vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .twohr {
+    margin-top: 2vw;
+  }
+
+  .bottom-margin {
+    padding-top: 3vw;
+  }
+
+}
+
+/* iPad вертикально: каталог */
+
+@media screen and (min-width: 481px) and (max-width: 1279px) and (orientation: portrait) {
+  .catalog-content {
+    position: relative;
+    display: block;
+    width: auto;
+    height: 118vw;
+    margin: 5vw 3.5vw 0;
+    overflow: visible;
+  }
+
+  .catalog-card {
+    position: absolute;
+    width: 56vw;
+    height: 62vw;
+    margin: 0;
+    border: 0.3vw solid black;
+    border-radius: 3vw;
+    overflow: hidden;
+    background: white;
+    transform: none;
+    transition:
+      transform 0.35s ease,
+      z-index 0.35s ease;
+  }
+
+  .catalog-card-one {
+    left: 0;
+    top: 0;
+    z-index: 3;
+  }
+
+  .catalog-card-two {
+    right: 0;
+    top: 12vw;
+    z-index: 2;
+  }
+
+  .catalog-card-three {
+    left: 8vw;
+    top: 54vw;
+    z-index: 1;
+  }
+
+  .catalog-color,
+  .catalog-img-wrapper,
+  .catalog-img {
+    height: 46vw;
+  }
+
+  .catalog-img-wrapper-one,
+  .catalog-img-wrapper-two,
+  .catalog-img-wrapper-three {
+    width: 100%;
+  }
+
+  .catalog-img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .catalog-card p {
+    height: 16vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 3.6vw;
+    line-height: 0.85;
+    font-weight: 300;
+  }
+
+  .catalog-content.mobile-active .catalog-card {
+    height: 62vw;
+  }
+
+  .catalog-content.mobile-active .catalog-card.mobile-open {
+    z-index: 20;
+    transform: translateY(-2vw) scale(1.03);
+  }
+
+  .catalog-content.mobile-active .catalog-card:not(.mobile-open) {
+    transform: scale(0.98);
+  }
+
+  .catalog-content.has-hover .catalog-card-one.active,
+  .catalog-content.has-hover .catalog-card-two.active,
+  .catalog-content.has-hover .catalog-card-three.active,
+  .catalog-content.has-hover .catalog-card-one.under,
+  .catalog-content.has-hover .catalog-card-two.under,
+  .catalog-content.has-hover .catalog-card-three.under,
+  .catalog-content.has-hover .catalog-card-two.middle {
+    width: 56vw;
+    margin-left: 0;
+    transform: none;
+  }
+
+  .catalog-card {
+    height: 57vw;
+  }
+
+  .catalog-color,
+  .catalog-img-wrapper,
+  .catalog-img {
+    height: 46vw;
+  }
+
+  .catalog-card p {
+    height: 11vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 3.4vw;
+    line-height: 1;
+  }
+
+  .catalog-content.mobile-active .catalog-card {
+    height: 57vw;
+  }
+}
+
+/* iPad вертикально: акции */
+
+@media screen and (min-width: 481px) and (max-width: 1279px) and (orientation: portrait) {
+  .sales-content {
+    position: relative;
+    display: block;
+    width: auto;
+    height: 118vw;
+    margin: 5vw 3.5vw 0;
+    overflow: visible;
+  }
+
+  .sales-card {
+    position: absolute;
+    width: 56vw;
+    height: 57vw;
+    margin: 0;
+    border: 0.3vw solid black;
+    border-radius: 3vw;
+    overflow: hidden;
+    background: white;
+    transform: none;
+    transition:
+      transform 0.35s ease,
+      z-index 0.35s ease;
+  }
+
+  .sales-card-one {
+    left: 0;
+    top: 0;
+    z-index: 3;
+  }
+
+  .sales-card-two {
+    right: 0;
+    top: 12vw;
+    z-index: 2;
+  }
+
+  .sales-card-three {
+    left: 8vw;
+    top: 58vw;
+    z-index: 1;
+  }
+
+  .sales-color,
+  .sales-img-wrapper,
+  .sales-img {
+    height: 46vw;
+  }
+
+  .sales-img-wrapper-one,
+  .sales-img-wrapper-two,
+  .sales-img-wrapper-three {
+    width: 100%;
+  }
+
+  .sales-img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .sales-card p {
+    height: 11vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 3.4vw;
+    line-height: 1;
+    font-weight: 300;
+  }
+
+  .sales-content.mobile-active .sales-card {
+    height: 57vw;
+  }
+
+  .sales-content.mobile-active .sales-card.mobile-open {
+    z-index: 20;
+    transform: translateY(-2vw) scale(1.03);
+  }
+
+  .sales-content.mobile-active .sales-card:not(.mobile-open) {
+    transform: scale(0.98);
+  }
+
+  .sales-content.has-hover .sales-card-one.active,
+  .sales-content.has-hover .sales-card-two.active,
+  .sales-content.has-hover .sales-card-three.active,
+  .sales-content.has-hover .sales-card-one.under,
+  .sales-content.has-hover .sales-card-two.under,
+  .sales-content.has-hover .sales-card-three.under,
+  .sales-content.has-hover .sales-card-two.middle {
+    width: 56vw;
+    margin-left: 0;
+    transform: none;
+  }
+
+  .sales-page .goods-breadcrumb,
+  .goods-month-page .goods-breadcrumb {
+    margin: 1vw 3.5vw -2vw;
+    display: flex;
+    align-items: center;
+    gap: 1.2vw;
+  }
+
+  .sales-page .goods-back,
+  .goods-month-page .goods-back {
+    width: 5vw;
+    height: 3vw;
+    flex: 0 0 5vw;
+    margin: 0;
+    transform: none;
+  }
+
+  .sales-page .goods-back svg,
+  .goods-month-page .goods-back svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: visible;
+  }
+
+  .sales-page .goods-breadcrumb p,
+  .goods-month-page .goods-breadcrumb p {
+    margin: 0;
+    font-size: 3.6vw;
+    line-height: 1;
+  }
+}
+
+/* iPad вертикально: товары месяца */
+
+@media screen and (min-width: 481px) and (max-width: 1279px) and (orientation: portrait){
+  .goods-month-page {
+    padding: 0 3.5vw;
+  }
+
+  .goods-breadcrumb {
+    margin: 3vw 0 5vw;
+    display: flex;
+    align-items: center;
+    gap: 1.2vw;
+  }
+
+  .goods-back {
+    width: 5vw;
+    height: 3vw;
+    flex: 0 0 5vw;
+    margin: 0;
+    transform: none;
+  }
+
+  .goods-back svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: visible;
+  }
+
+  .goods-breadcrumb p {
+    margin: 0;
+    font-size: 3.4vw;
+    line-height: 1;
+    font-weight: 400;
+  }
+
+  .goods-gender-grid {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 96vw;
+    overflow: visible;
+  }
+
+  .goods-gender-card {
+    position: absolute;
+    width: 72vw;
+    height: 67vw;
+    margin: 0;
+    border: 0.3vw solid black;
+    border-radius: 3vw;
+    overflow: hidden;
+    background: white;
+    transition:
+      transform 0.35s ease,
+      z-index 0.35s ease;
+  }
+
+  .goods-women {
+    left: 0;
+    top: 0;
+    z-index: 3;
+  }
+
+  .goods-men {
+    right: 0;
+    top: 39vw;
+    z-index: 2;
+  }
+
+  .goods-gender-img {
+    width: 100%;
+    height: 56vw;
+    overflow: hidden;
+  }
+
+  .goods-gender-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+
+  .goods-gender-card p {
+    height: 11vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.4vw;
+    line-height: 1;
+    font-weight: 300;
+    background: white;
+  }
+
+  .goods-gender-grid.mobile-active .goods-gender-card.mobile-open {
+    z-index: 20;
+    transform: translateY(-2vw) scale(1.03);
+  }
+
+  .goods-gender-grid.mobile-active .goods-gender-card:not(.mobile-open) {
+    transform: scale(0.98);
+  }
+
+  .goods-month-page .twohr {
+    margin: 20vw 0 0;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1279px) and (orientation: portrait) {
+  .goods-month-page {
+    padding: 0 3.5vw;
+  }
+
+  .goods-month-page .goods-breadcrumb {
+    position: relative;
+    z-index: 30;
+    margin: 3vw 0 4vw;
+  }
+
+  .goods-gender-grid {
+    height: 82vw;
+    margin-top: 2vw;
+  }
+
+  .goods-gender-card {
+    width: 60vw;
+    height: 54vw;
+    border: 0.3vw solid black;
+    border-radius: 3vw;
+  }
+
+  .goods-women {
+    left: 0;
+    top: 5vw;
+    z-index: 3;
+  }
+
+  .goods-men {
+    right: 0;
+    top: 40vw;
+    z-index: 2;
+  }
+
+  .goods-gender-img {
+    height: 45vw;
+  }
+
+  .goods-gender-img img {
+    height: 45vw;
+    object-fit: cover;
+  }
+
+  .goods-gender-card p {
+    height: 9vw;
+    margin: 0;
+    padding: 0;
+    font-size: 3.2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .goods-gender-grid.mobile-active .goods-gender-card {
+    height: 54vw;
+  }
+}
+
+/* iPad вертикально: события */
+
+@media screen and (min-width: 481px) and (max-width: 1279px) and (orientation: portrait) {
+  .events-page {
+    padding: 0 3.5vw;
+  }
+
+  .events-row {
+    position: relative;
+    display: block;
+    height: 118vw;
+    margin-top: 4vw;
+    padding: 0;
+    overflow: visible;
+  }
+
+  .event-card {
+    position: absolute;
+    width: 31.2vw;
+    margin: 0;
+    border: 0.27vw solid black;
+    border-radius: 1.2vw;
+    overflow: hidden;
+    background: white;
+    transform: none;
+    transition:
+      height 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+      transform 0.35s ease;
+  }
+
+  .event-yellow {
+    left: 0;
+    top: 0;
+    height: 44vw;
+    z-index: 3;
+  }
+
+  .designer-card {
+    left: 31.2vw;
+    top: 0;
+    height: 49vw;
+    z-index: 4;
+    cursor: pointer;
+  }
+
+  .event-blue {
+    left: 62.4vw;
+    top: 0;
+    height: 36vw;
+    z-index: 3;
+  }
+
+  .event-green {
+    left: 0;
+    top: 44vw;
+    height: 39vw;
+    z-index: 2;
+  }
+
+  .event-red {
+    left: 62.4vw;
+    top: 36vw;
+    height: 57vw;
+    z-index: 2;
+    transform: none;
+  }
+
+  .event-yellow .event-img {
+    height: 34vw;
+  }
+
+  .designer-card .event-img,
+  .designer-card.is-open .event-img {
+    height: 39vw;
+  }
+
+  .event-blue .event-img {
+    height: 27vw;
+  }
+
+  .event-green .event-img {
+    height: 29vw;
+  }
+
+  .event-red .event-img {
+    height: 47vw;
+  }
+
+  .event-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+  }
+
+  .event-card p {
+    height: 10vw;
+    min-height: 0;
+    margin: 0;
+    padding: 1.4vw 1vw 0;
+    font-size: 2.7vw;
+    line-height: 0.9;
+    text-align: center;
+    background: white;
+  }
+
+  .designer-card .event-short,
+  .designer-card.is-open .event-short {
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    transform: none;
+    opacity: 1;
+  }
+
+  .designer-card .event-short p {
+    height: auto;
+    padding: 0 1vw;
+    font-size: 2.6vw;
+    line-height: 0.85;
+  }
+
+  .designer-card .event-full {
+    position: static;
+    display: block;
+    height: 0;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0 1vw;
+    background: white;
+    text-align: center;
+    transition:
+      max-height 0.55s ease,
+      opacity 0.25s ease,
+      padding 0.55s ease;
+  }
+
+  .designer-card.is-open {
+    height: 78vw;
+    transform: none;
+  }
+
+  .designer-card.is-open .event-full {
+    max-height: 29vw;
+    opacity: 1;
+    padding: 0.8vw 1vw 1vw;
+    overflow: visible;
+  }
+
+  .designer-card .event-full p {
+    height: auto;
+    min-height: 0;
+    margin: 0 0 0.35vw;
+    padding: 0;
+    font-size: 2.3vw;
+    line-height: 0.95;
+  }
+
+  .designer-card .event-full a {
+    display: inline-block;
+    margin: 0.5vw 0 0;
+    padding: 0.45vw 1.5vw;
+    border: 0.22vw solid black;
+    border-radius: 0.5vw;
+    font-size: 2.3vw;
+    line-height: 1;
+    background: white;
+  }
+
+  .designer-card .event-title {
+    display: none;
+  }
+
+  .events-row.is-waving .event-card,
+  .events-row.is-waving .event-card.wave-active,
+  .events-row.is-waving .event-card.wave-left,
+  .events-row.is-waving .event-card.wave-right,
+  .events-row.is-waving .event-card.wave-left-2,
+  .events-row.is-waving .event-card.wave-right-2,
+  .events-row.is-waving .event-card.wave-far {
+    transform: none;
+  }
+
+  .events-page .twohr {
+    width: 100%;
+    margin: 5vw 0 0;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1279px) and (orientation: portrait) {
+  .designer-card.is-open {
+    height: 68vw;
+  }
+
+  .designer-card.is-open .event-full {
+    max-height: 19vw;
+    padding: 0.6vw 1vw 0.8vw;
+  }
+
+  .designer-card .event-full p {
+    margin-bottom: 0.25vw;
+    font-size: 2.2vw;
+    line-height: 0.9;
+  }
+
+  .designer-card .event-full a {
+    margin-top: 0.35vw;
+    padding: 0.35vw 1.4vw;
+    font-size: 2.2vw;
+  }
+}
+
+/* iPad вертикально: поддержка */
+
+@media screen and (min-width: 481px) and (max-width: 1279px) and (orientation: portrait){
+  .support-page {
+    padding: 0 3.5vw;
+  }
+
+  .support-hero {
+    position: relative;
+    width: 100%;
+    height: 34vw;
+    margin-top: 3vw;
+    border: 0.35vw solid black;
+    border-radius: 0.9vw;
+    overflow: hidden;
+    background: #ffee00;
+  }
+
+  .support-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+
+  .support-contact {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 3;
+    width: 46vw;
+    padding: 2vw 1vw;
+    transform: translate(-50%, -50%);
+    border: 0.3vw solid black;
+    border-radius: 0.5vw;
+    background: white;
+    text-align: center;
+  }
+
+  .support-phone,
+  .support-mail {
+    margin: 0;
+    font-size: 4.2vw;
+    line-height: 1.15;
+    font-weight: 400;
+  }
+
+  .support-small {
+    margin-top: 1.2vw;
+    font-size: 1.8vw;
+    line-height: 0.9;
+  }
+
+  .reviews-section {
+    margin-top: 7vw;
+  }
+
+  .reviews-section h1 {
+    margin: 0 0 2vw;
+    font-size: 3.3vw;
+    line-height: 1;
+    font-weight: 500;
+  }
+
+  .review-form {
+    width: 100%;
+    height: auto;
+    border: none;
+    border-radius: 0;
+    overflow: visible;
+  }
+
+  .review-form textarea {
+    display: block;
+    width: 100%;
+    height: 19vw;
+    padding: 1.2vw;
+    border: 0.3vw solid black;
+    border-radius: 0.7vw;
+    resize: none;
+    font-family: inherit;
+    font-size: 2.3vw;
+    font-weight: 300;
+    outline: none;
+  }
+
+  .review-form textarea::placeholder {
+    color: #999;
+  }
+
+  .review-form-bottom {
+    margin-top: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .rating-input {
+    display: flex;
+    gap: 0.6vw;
+  }
+
+  .rating-input button {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: #ffee00;
+    font-family: inherit;
+    font-size: 5.2vw;
+    line-height: 1;
+    cursor: pointer;
+  }
+
+  .review-form .review-submit {
+    position: static;
+    width: 20vw;
+    height: 5.2vw;
+    border: 0.2vw solid #888;
+    border-radius: 0.7vw;
+    background: #9ed8f7;
+    color: #888;
+    font-family: inherit;
+    font-size: 2.2vw;
+    cursor: pointer;
+  }
+
+  .review-form .review-submit.is-active {
+    border-color: black;
+    background: #1aa5ef;
+    color: black;
+  }
+
+  .reviews-grid {
+    width: calc(100% + 3.5vw);
+    margin-top: 5vw;
+    display: flex;
+    gap: 2.5vw;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 2vw;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .reviews-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .review-card {
+    flex: 0 0 34vw;
+    height: 39vw;
+    min-width: 34vw;
+    border: 0.3vw solid black;
+    border-radius: 0.9vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    scroll-snap-align: start;
+  }
+
+  .review-text {
+    height: 25vw;
+    margin: 0;
+    padding: 1.8vw;
+    font-size: 2.25vw;
+    line-height: 0.95;
+    color: #999;
+    overflow: hidden;
+  }
+
+  .stars {
+    height: 7vw;
+    padding-left: 1.6vw;
+    font-size: 5vw;
+    line-height: 1;
+    color: #ffee00;
+    white-space: nowrap;
+  }
+
+  .review-name {
+    height: 7vw;
+    display: flex;
+    align-items: center;
+    padding: 0 1.8vw;
+    font-size: 2.5vw;
+    line-height: 1;
+  }
+
+  .support-page .twohr {
+    width: 100%;
+    margin: 2.5vw 0 0;
+  }
+}
+
+
+/* iPad вертикально: о нас */
+
+@media screen and (min-width: 481px) and (max-width: 1279px) and (orientation: portrait) {
+  .about-page {
+    padding: 0 3.5vw;
+  }
+
+  .about-location {
+    position: relative;
+    display: block;
+    margin-top: 5vw;
+  }
+
+  .about-address h1 {
+    margin: 0;
+    font-size: 4.2vw;
+    line-height: 1;
+    font-weight: 400;
+  }
+
+  .about-address p {
+    margin-top: 1.5vw;
+    font-size: 2.7vw;
+    line-height: 1.15;
+    font-weight: 300;
+  }
+
+  .about-map {
+    width: 44vw;
+    height: 28vw;
+    margin-top: 4vw;
+    border: 0.35vw solid black;
+    border-radius: 0.9vw;
+    overflow: hidden;
+  }
+
+  .about-map img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .about-arrow {
+    position: absolute;
+    left: 50vw;
+    top: 40vw;
+    width: 4vw;
+    height: 4vw;
+    margin: 0;
+  }
+
+  .about-arrow svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  .about-arrow path {
+    fill: none;
+    stroke: black;
+    stroke-width: 12;
+    stroke-linecap: square;
+    stroke-linejoin: miter;
+  }
+
+  .team-section {
+    margin-top: 9vw;
+  }
+
+  .team-section h2 {
+    display: block;
+    margin: 0 0 3vw;
+    font-size: 4.4vw;
+    line-height: 1;
+    font-weight: 400;
+  }
+
+  .team-grid {
+    display: flex;
+    gap: 2vw;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 2vw;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .team-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .team-card {
+    flex: 0 0 39vw;
+    height: 50vw;
+    border: 0.35vw solid black;
+    border-radius: 1.2vw;
+    overflow: hidden;
+    background: white;
+    scroll-snap-align: start;
+  }
+
+  .team-img {
+    position: relative;
+    width: 100%;
+    height: 42vw;
+    overflow: hidden;
+  }
+
+  .team-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .team-draw-canvas {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    touch-action: none;
+  }
+
+  .team-card p {
+    height: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0 1vw;
+    font-size: 2.8vw;
+    line-height: 1;
+    font-weight: 300;
+    background: white;
+    white-space: nowrap;
+  }
+
+  .about-page .twohr {
+    width: 100%;
+    margin: 4vw 0 0;
+  }
+}
+
+/* пытаюсь редачить сетку. я плачу */
+
+@media screen and (min-width: 481px) and (max-width: 1279px) and (orientation: portrait) {
+  .header-events {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    width: calc(100% - 7vw);
+    margin: 0 3.5vw;
+    padding: 2vw 0 0;
+    align-items: center;
+  }
+
+  .header-menu-left {
+    justify-self: start;
+    display: flex;
+    gap: 5vw;
+    margin: 0;
+  }
+
+  .header-menu {
+    justify-self: end;
+    display: flex;
+    gap: 5vw;
+    margin: 0;
+  }
+
+  .mainMenu {
+    justify-self: center;
+    margin: 0;
+  }
+
+  body > hr {
+    width: calc(100% - 7vw);
+    margin-left: 3.5vw;
+    margin-right: 3.5vw;
+  }
+}
+
+
