@@ -4,22 +4,103 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="icon" type="image/png" href="img/icon.png" />
     <script src="script.js" defer></script>
-    <title>НИША</title>
+    <title>О НАС</title>
   </head>
+
+<!-- верхнее меню -->
   <body>
-    <header class="header-events">
-      <nav class="header-menu-left">
-        <div class="catalog"><a href="catalog.html">каталог</a></div>
-        <div class="about-shop"><a href="about.html">о магазине</a></div>
-      </nav>
-      <div class="mainMenu"><a href="index.html" class="main">ниша</a></div>
-      <nav class="header-menu">
-        <div class="events"><a href="events.html"> события</a></div>
-        <div class="support"><a href="support.html">поддержка</a></div>
-      </nav>
-    </header>
-    <hr />
-   
-  </body>
+  <header class="header-events">
+  <nav class="header-menu-left">
+  <div class="catalog menu-item">
+  <a href="catalog.html">каталог</a>
+  <img class="hand-drawn-1" src="img/обводка меню1.png" alt="" />
+  </div>
+  <div class="about-shop menu-item active">
+  <a href="about.html">о магазине</a>
+  <img class="hand-drawn" src="img/обводка меню.png" alt="" />
+  </div>
+  </nav>
+  <div class="mainMenu">
+  <a href="index.html" class="main">ниша</a>
+  </div>
+  <nav class="header-menu">
+  <div class="events menu-item">
+  <a href="events.html">события</a>
+  <img class="hand-drawn3" src="img/обводка меню2.png" alt="" />
+  </div>
+  <div class="support menu-item">
+  <a href="support.html">поддержка</a>
+  <img class="hand-drawn" src="img/обводка меню.png" alt="" />
+  </div>
+  </nav>
+  </header>
+  <hr />
+
+  <!-- блок с инфой и картой -->
+   <main class="about-page">
+  <section class="about-location">
+  <div class="about-address">
+  <h1>МЫ НАХОДИМСЯ:</h1>
+  <p>
+  г. Санкт-Петербург, ул. Коллонтай, д.8<br />
+  м. Проспект Большевиков
+  </p>
+  <a
+  class="about-arrow"
+  href="https://yandex.ru/maps/?text=Санкт-Петербург, ул. Коллонтай, д.8"
+  target="_blank"
+    aria-label="Открыть адрес на карте"
+      >
+    <svg viewBox="0 0 120 120" aria-hidden="true">
+    <path d="M18 102 L95 25" />
+    <path d="M48 22 L98 22 L98 72" />
+    </svg>
+  </a>
+ </div>
+ <div class="about-map">
+  <img src="img/map.png" alt="карта магазина" />
+  </div>
+  </section>
+
+  <!-- секция с сотрудниками -->
+<section class="team-section">
+<h2>НАШИ СОТРУДНИКИ</h2>
+<div class="team-grid">
+<article class="team-card yellow">
+<div class="team-img">
+  <img src="img/антон.png" alt="" />
+  <canvas class="team-draw-canvas"></canvas>
+</div>
+<p>Антон, дизигнер</p>
+</article>
+
+<article class="team-card purple">
+<div class="team-img">
+  <img src="img/лизка.png" alt="" />
+   <canvas class="team-draw-canvas"></canvas>
+</div>
+<p>Лиза, креатор</p>
+</article>
+
+<article class="team-card red">
+<div class="team-img">
+  <img src="img/алина.png" alt="" />
+  <canvas class="team-draw-canvas"></canvas>
+</div>
+<p>Алина, продажи</p>
+</article>
+</section>
+
+
+<!-- нижнее меню -->
+<hr class="twohr" />
+<footer class="bottom-margin">
+<div class="number"><p>+7 967 838 50-10</p></div>
+<div class="better-name"><p>О НАС</p></div>
+<div class="telegram-channel"><p>TGK: @hishaswaga</p></div>
+</footer>
+</main>
+</body>
 </html>

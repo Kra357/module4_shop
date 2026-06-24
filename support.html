@@ -4,10 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="icon" type="image/png" href="img/icon.png" />
     <script src="script.js" defer></script>
-    <title>НИША</title>
+    <title>ПОДДЕРЖКА</title>
   </head>
   <body>
+
+    <!-- верхнее меню -->
     <header class="header-events">
       <nav class="header-menu-left">
         <div class="catalog"><a href="catalog.html">каталог</a></div>
@@ -20,30 +23,38 @@
   <a href="support.html">поддержка</a>
   <img class="hand-drawn" src="img/обводка меню.png" alt="">
 </div>
+
+<!-- блок с поддержкой -->
       </nav>
     </header>
     <hr />
     <main class="support-page">
   <section class="support-hero">
   <img src="img/люди бегают.png" alt="поддержка" />
-
   <canvas class="draw-canvas"></canvas>
-
   <div class="support-contact">
     <p class="support-phone">+7 967 222 78-00</p>
     <p class="support-mail">nishahelp@bk.ru</p>
     <p class="support-small">бесплатный вызов<br />с любого региона России</p>
   </div>
-</section>
 
+  <!-- книга предложений и отзывы -->
+</section>
   <section class="reviews-section">
     <h1>КНИГА ПРЕДЛОЖЕНИЙ</h1>
-
-    <form class="review-form">
-      <textarea placeholder="Поделитесь впечатлениями..."></textarea>
-      <button type="submit">отправить</button>
-    </form>
-
+  <form class="review-form">
+  <textarea placeholder="Поделитесь впечатлениями..."></textarea>
+  <div class="review-form-bottom">
+    <div class="rating-input" aria-label="Оценка">
+      <button type="button" data-rating="1">☆</button>
+      <button type="button" data-rating="2">☆</button>
+      <button type="button" data-rating="3">☆</button>
+      <button type="button" data-rating="4">☆</button>
+      <button type="button" data-rating="5">☆</button>
+    </div>
+    <button class="review-submit" type="submit">отправить</button>
+  </div>
+</form>
     <div class="reviews-grid">
       <article class="review-card">
         <p class="review-text">
@@ -54,7 +65,6 @@
         <div class="stars">★★★★★</div>
         <div class="review-name red">@Ирина228</div>
       </article>
-
       <article class="review-card">
         <p class="review-text">
           В целом, нормик, но единственное, что хотелось бы, чтобы магазин
@@ -63,13 +73,11 @@
         <div class="stars">★★★★☆</div>
         <div class="review-name blue">@Алина13лет</div>
       </article>
-
       <article class="review-card">
         <p class="review-text">Норм место.</p>
         <div class="stars">★★★★★</div>
         <div class="review-name green">@Люблюмаин11</div>
       </article>
-
       <article class="review-card">
         <p class="review-text">
           Первый раз в жизни купил вообще что-то в секонде, приятно, чисто,
@@ -81,8 +89,8 @@
     </div>
   </section>
 
+  <!-- нижнее меню -->
   <hr class="twohr" />
-
   <footer class="bottom-margin">
     <div class="number"><p>+7 967 838 50-10</p></div>
     <div class="better-name"><p>ВАШИ ОТЗЫВЫ</p></div>

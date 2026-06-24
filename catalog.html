@@ -4,22 +4,86 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="icon" type="image/png" href="img/icon.png" />
     <script src="script.js" defer></script>
-    <title>НИША</title>
+    <title>КАТАЛОГ</title>
   </head>
+
   <body>
-    <header class="header-events">
-      <nav class="header-menu-left">
-        <div class="catalog"><a href="catalog.html">каталог</a></div>
-        <div class="about-shop"><a href="about.html">о магазине</a></div>
-      </nav>
-      <div class="mainMenu"><a href="index.html" class="main">ниша</a></div>
-      <nav class="header-menu">
-        <div class="events"><a href="events.html"> события</a></div>
-        <div class="support"><a href="support.html">поддержка</a></div>
-      </nav>
+
+    <!-- верхнее меню -->
+  <header class="header-events">
+  <nav class="header-menu-left">
+    <div class="catalog menu-item active">
+      <a href="catalog.html">каталог</a>
+      <img class="hand-drawn-1" src="img/обводка меню1.png" alt="" />
+    </div>
+    <div class="about-shop menu-item">
+            <a href="about.html">о магазине</a>
+      <img class="hand-drawn" src="img/обводка меню.png" alt="" />
+    </div>
+    </nav>
+    <div class="mainMenu">
+      <a href="index.html" class="main">ниша</a>
+    </div>
+  <nav class="header-menu">
+    <div class="events menu-item">
+        <a href="events.html">события</a>
+        <img class="hand-drawn3" src="img/обводка меню2.png" alt="" />
+    </div>
+    <div class="support menu-item">
+    <a href="support.html">поддержка</a>
+    <img class="hand-drawn" src="img/обводка меню.png" alt="" />
+    </div>
+    </nav>
+
+    <!-- сам каталог -->
     </header>
     <hr />
-   
+    <main class="catalog-page">
+    <section class="catalog-content">
+  <article class="catalog-card catalog-card-one">
+    <div class="catalog-color catalog-yellow">
+      <div class="catalog-img-wrapper catalog-img-wrapper-one">
+        <img class="catalog-img" src="img/кубок.png" alt="" />
+      </div>
+    </div>
+  <a href="catalog.html">
+      <a href="goods-month.html">
+  <p>товары месяца</p>
+</a>
+  </article>
+ <article class="catalog-card catalog-card-two">
+<div class="catalog-color catalog-green">
+      <div class="catalog-img-wrapper catalog-img-wrapper-two">
+        <img class="catalog-img" src="img/сейл.png" alt="" />
+      </div>
+    </div>
+    <a href="sales.html">
+  <p>акции</p>
+</a>
+  </article>
+  <article class="catalog-card catalog-card-three">
+    <div class="catalog-color catalog-blue">
+      <div class="catalog-img-wrapper catalog-img-wrapper-three">
+        <img class="catalog-img" src="img/брендинг.png" alt="" />
+      </div>
+    </div>
+    <a href="catalog.html">
+      <p>брендовая продукция</p>
+    </a>
+  </article>
+
+  <!-- нижнее меню -->
+</section>
+      <hr class="twohr" />
+      <footer class="bottom-margin">
+        <div class="number"><p>+7 967 838 50-10</p></div>
+        <div class="better-name"><p>ТОВАРЫ</p></div>
+        <div class="telegram-channel"><p>TGK: @hishaswaga</p></div>
+      </footer>
+    </main>
   </body>
+
+
 </html>
