@@ -293,11 +293,10 @@ const catalogCards = document.querySelectorAll(
 const catalogContainer = document.querySelector(".catalog-content");
 function resetCatalogCards() {
   catalogCards.forEach((card) => {
-    card.classList.remove("active", "under", "middle");
+    card.classList.remove("active", "under", "middle", "mobile-open");
   });
-
   if (catalogContainer) {
-    catalogContainer.classList.remove("has-hover");
+    catalogContainer.classList.remove("has-hover", "mobile-active");
   }
 }
 function activateCatalogCard(card) {
@@ -320,25 +319,41 @@ function activateCatalogCard(card) {
     cardThree.classList.add("under");
   }
 }
+function openMobileCatalogCard(card) {
+  if (!catalogContainer) return;
+  catalogContainer.classList.add("mobile-active");
+  catalogCards.forEach((item) => {
+    item.classList.remove("mobile-open");
+  });
+  card.classList.add("mobile-open");
+}
 if (catalogCards.length && catalogContainer) {
   catalogCards.forEach((card) => {
     card.addEventListener("mouseenter", () => {
+      if (isMobile.matches) return;
       activateCatalogCard(card);
     });
-    card.addEventListener("mouseleave", resetCatalogCards);
+    card.addEventListener("mouseleave", () => {
+      if (isMobile.matches) return;
+      resetCatalogCards();
+    });
+    card.addEventListener("click", () => {
+      if (!isMobile.matches) return;
+      openMobileCatalogCard(card);
+    });
   });
+  isMobile.addEventListener("change", resetCatalogCards);
 }
 
 // карточки в мужском и женском
-
 const genderCards = document.querySelectorAll(".goods-women, .goods-men");
 const genderGrid = document.querySelector(".goods-gender-grid");
 function resetGenderCards() {
   genderCards.forEach((card) => {
-    card.classList.remove("active", "under");
+    card.classList.remove("active", "under", "mobile-open");
   });
   if (genderGrid) {
-    genderGrid.classList.remove("has-hover");
+    genderGrid.classList.remove("has-hover", "mobile-active");
   }
 }
 
@@ -357,53 +372,31 @@ function activateGenderCard(card) {
     womenCard.classList.add("under");
   }
 }
+function openMobileGenderCard(card) {
+  if (!genderGrid) return;
+  genderGrid.classList.add("mobile-active");
+  genderCards.forEach((item) => {
+    item.classList.remove("mobile-open");
+  });
+  card.classList.add("mobile-open");
+}
+
 if (genderCards.length && genderGrid) {
   genderCards.forEach((card) => {
     card.addEventListener("mouseenter", () => {
+      if (isMobile.matches) return;
       activateGenderCard(card);
     });
-    card.addEventListener("mouseleave", resetGenderCards);
-  });
-}
-const salesCards = document.querySelectorAll(
-  ".sales-card-one, .sales-card-two, .sales-card-three"
-);
-const salesContainer = document.querySelector(".sales-content");
-function resetSalesCards() {
-  salesCards.forEach((card) => {
-    card.classList.remove("active", "under", "middle");
-  });
-  if (salesContainer) {
-    salesContainer.classList.remove("has-hover");
-  }
-}
-function activateSalesCard(card) {
-  if (!salesContainer) return;
-  const cardOne = document.querySelector(".sales-card-one");
-  const cardTwo = document.querySelector(".sales-card-two");
-  const cardThree = document.querySelector(".sales-card-three");
-  if (!cardOne || !cardTwo || !cardThree) return;
-  resetSalesCards();
-  card.classList.add("active");
-  salesContainer.classList.add("has-hover");
-  if (card.classList.contains("sales-card-three")) {
-    cardOne.classList.add("under");
-    cardTwo.classList.add("middle");
-  } else if (card.classList.contains("sales-card-two")) {
-    cardOne.classList.add("under");
-    cardThree.classList.add("under");
-  } else if (card.classList.contains("sales-card-one")) {
-    cardTwo.classList.add("under");
-    cardThree.classList.add("under");
-  }
-}
-if (salesCards.length && salesContainer) {
-  salesCards.forEach((card) => {
-    card.addEventListener("mouseenter", () => {
-      activateSalesCard(card);
+    card.addEventListener("mouseleave", () => {
+      if (isMobile.matches) return;
+      resetGenderCards();
     });
-    card.addEventListener("mouseleave", resetSalesCards);
+    card.addEventListener("click", () => {
+      if (!isMobile.matches) return;
+      openMobileGenderCard(card);
+    });
   });
+  isMobile.addEventListener("change", resetGenderCards);
 }
 
 // рисование на карточках сотрудников
@@ -478,3 +471,72 @@ teamCanvases.forEach((canvas) => {
   });
   canvas.addEventListener("dblclick", clearCanvas);
 });
+
+const salesCards = document.querySelectorAll(
+  ".sales-card-one, .sales-card-two, .sales-card-three"
+);
+
+const salesContainer = document.querySelector(".sales-content");
+
+function resetSalesCards() {
+  salesCards.forEach((card) => {
+    card.classList.remove("active", "under", "middle", "mobile-open");
+  });
+
+  if (salesContainer) {
+    salesContainer.classList.remove("has-hover", "mobile-active");
+  }
+}
+
+function activateSalesCard(card) {
+  if (!salesContainer) return;
+
+  const cardOne = document.querySelector(".sales-card-one");
+  const cardTwo = document.querySelector(".sales-card-two");
+  const cardThree = document.querySelector(".sales-card-three");
+
+  if (!cardOne || !cardTwo || !cardThree) return;
+
+  resetSalesCards();
+
+  card.classList.add("active");
+  salesContainer.classList.add("has-hover");
+
+  if (card.classList.contains("sales-card-three")) {
+    cardOne.classList.add("under");
+    cardTwo.classList.add("middle");
+  } else if (card.classList.contains("sales-card-two")) {
+    cardOne.classList.add("under");
+    cardThree.classList.add("under");
+  } else if (card.classList.contains("sales-card-one")) {
+    cardTwo.classList.add("under");
+    cardThree.classList.add("under");
+  }
+}
+// акции
+function openMobileSalesCard(card) {
+  if (!salesContainer) return;
+  salesContainer.classList.add("mobile-active");
+  salesCards.forEach((item) => {
+    item.classList.remove("mobile-open");
+  });
+  card.classList.add("mobile-open");
+}
+if (salesCards.length && salesContainer) {
+  salesCards.forEach((card) => {
+    card.addEventListener("mouseenter", () => {
+      if (isMobile.matches) return;
+      activateSalesCard(card);
+    });
+    card.addEventListener("mouseleave", () => {
+      if (isMobile.matches) return;
+      resetSalesCards();
+    });
+    card.addEventListener("click", () => {
+      if (!isMobile.matches) return;
+      openMobileSalesCard(card);
+    });
+  });
+  isMobile.addEventListener("change", resetSalesCards);
+}
+
