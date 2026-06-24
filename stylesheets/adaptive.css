@@ -582,7 +582,7 @@
 
   .events-row:has(.designer-card.is-open) .event-red,
   .events-row.designer-open .event-red {
-    transform: translateY(23vw);
+    transform: translateY(40vw);
   }
 
   .event-yellow .event-img {
@@ -615,10 +615,10 @@
   }
 
   .event-card p {
-    height: 14vw;
+    height: 20vw;
     min-height: 0;
     padding: 2vw 1vw 0;
-    font-size: 3.4vw;
+    font-size: 4vw;
     line-height: 0.9;
     background: white;
   }
@@ -637,8 +637,8 @@
   .designer-card .event-short p {
     height: auto;
     padding: 0 1vw;
-    font-size: 3.3vw;
-    line-height: 0.85;
+    font-size: 4vw;
+    line-height: 0.89;
   }
 
   .designer-card .event-full {
@@ -658,9 +658,9 @@
   }
 
   .designer-card.is-open .event-full {
-    max-height: 28vw;
+    min-height: 40vw;
     opacity: 1;
-    padding: 0.8vw 1vw 1vw;
+    padding: 0.2vw 01vw 1vw;
     overflow: visible;
   }
 
@@ -669,17 +669,17 @@
     min-height: 0;
     margin: 0 0 0.4vw;
     padding: 0;
-    font-size: 2.8vw;
-    line-height: 0.95;
+    font-size: 4vw;
+    line-height: 0.85;
   }
 
   .designer-card .event-full a {
     display: inline-block;
-    margin: 0.5vw 0 0;
-    padding: 0.55vw 1.8vw;
+    margin: 0.1vw 0 0;
+    padding: 0.1vw 1.8vw;
     border: 0.3vw solid black;
-    border-radius: 0.8vw;
-    font-size: 2.8vw;
+    border-radius: 0.vw;
+    font-size: 4vw;
     line-height: 1;
     background: white;
   }
@@ -700,7 +700,7 @@
 
   .events-row.is-waving:has(.designer-card.is-open) .event-red,
   .events-row.is-waving.designer-open .event-red {
-    transform: translateY(23vw);
+    transform: translateY(35vw);
   }
 
   .events-page .twohr {
@@ -2341,3 +2341,58 @@
 }
 
 
+/* мне лень искать конпку, перекрываю стиль */
+
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .designer-card .event-full a {
+    min-width: 3vw;
+    min-height: 0vw;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: -2vw auto 0;
+    padding: 1.2vw 3vw;
+    border: 0.45vw solid black;
+    border-radius: 1vw;
+    font-size: 3.5vw;
+    line-height: 1;
+    box-sizing: border-box;
+  }
+
+  .designer-card.is-open .event-full {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+}
+
+/* запуталась в кнопке, делаю еще одно перекрытие */
+
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .designer-card.is-open {
+    height: 104vw;
+  }
+
+  .events-row:has(.designer-card.is-open),
+  .events-row.designer-open {
+    height: 204vw;
+  }
+
+  .events-row:has(.designer-card.is-open) .event-red,
+  .events-row.designer-open .event-red {
+    transform: translateY(35vw);
+  }
+
+  .designer-card.is-open .event-full {
+    max-height: 40vw;
+    padding: 1.5vw 2vw 3vw;
+  }
+
+  .designer-card .event-full p {
+    margin-bottom: 1vw;
+  }
+
+  .designer-card .event-full a {
+    margin-top: 2.8vw;
+    margin-bottom: 0;
+  }
+}
