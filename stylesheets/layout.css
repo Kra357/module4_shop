@@ -1780,3 +1780,46 @@ overflow-x: auto;
   cursor: crosshair;
   touch-action: none;
 }
+
+.error-page {
+  min-height: 47vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-content {
+  position: relative;
+  text-align: center;
+  margin-top: 2vw;
+}
+
+.error-content h1 {
+  font-size: 17vw;
+  line-height: 0.8;
+  font-weight: 500;
+  margin: 0;
+}
+
+.error-content p {
+  margin-top: 2vw;
+  font-size: 2vw;
+  font-weight: 300;
+}
+
+.error-star {
+  position: absolute;
+  width: 12vw;
+  height: auto;
+}
+
+.error-star-left {
+  left: -9vw;
+  top: -4vw;
+}
+
+.error-star-right {
+  right: -8vw;
+  bottom: -6vw;
+  width: 9vw;
+}

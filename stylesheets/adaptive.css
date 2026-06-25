@@ -2448,3 +2448,209 @@
     height: 78vw;
   }
 }
+
+/* 404: мобильная версия */
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .error-page {
+    min-height: 155vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .error-content {
+    position: relative;
+    text-align: center;
+    margin-top: -10vw;
+  }
+
+  .error-content h1 {
+    font-size: 31vw;
+    line-height: 0.8;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  .error-content p {
+    margin-top: 4vw;
+    font-size: 3.5vw;
+    font-weight: 300;
+  }
+
+  .error-star {
+    position: absolute;
+    width: 16vw;
+    height: auto;
+  }
+
+  .error-star-left {
+    left: -8vw;
+    top: -17vw;
+  }
+
+  .error-star-right {
+    right: -12vw;
+    bottom: -20vw;
+  }
+
+  .error-page + .twohr {
+    margin-top: 0 !important;
+  }
+
+  .error-page ~ .bottom-margin {
+    display: flex !important;
+    flex-direction: column;
+    gap: 1.5vw;
+    align-items: center;
+    text-align: center;
+    padding-top: 5vw !important;
+  }
+
+  .error-page ~ .bottom-margin .better-name {
+    order: 1;
+    font-size: 8vw;
+  }
+
+  .error-page ~ .bottom-margin .telegram-channel {
+    order: 2;
+    font-size: 6vw;
+  }
+
+  .error-page ~ .bottom-margin .number {
+    order: 3;
+    font-size: 6vw;
+  }
+}
+
+/* 404 айпад  вертикально */
+@media screen and (min-width: 481px) and (max-width: 1279px) and (orientation: portrait) {
+  .error-page {
+    min-height: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .error-content {
+    position: relative;
+    text-align: center;
+    margin-top: -5vw;
+  }
+
+  .error-content h1 {
+    font-size: 23vw;
+    line-height: 0.8;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  .error-content p {
+    margin-top: 3vw;
+    font-size: 3vw;
+    font-weight: 300;
+  }
+
+  .error-star {
+    position: absolute;
+    width: 11vw;
+    height: auto;
+  }
+
+  .error-star-left {
+    left: -7vw;
+    top: -9vw;
+  }
+
+  .error-star-right {
+    right: -9vw;
+    bottom: -8vw;
+  }
+
+  .error-page + .twohr {
+    margin-top: 0 !important;
+  }
+  body:has(.error-page) {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  body:has(.error-page) .error-page {
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  body:has(.error-page) .error-content {
+    margin-top: -8vw;
+  }
+
+  body:has(.error-page) .twohr {
+    margin-top: auto !important;
+  }
+
+  body:has(.error-page) .bottom-margin {
+    margin-bottom: 0vw !important;
+  }
+
+    .bottom-margin {
+    width: 100%;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    box-sizing: border-box;
+  }
+
+  .number {
+    justify-self: start;
+  }
+
+  .better-name {
+    justify-self: center;
+  }
+
+  .telegram-channel {
+    justify-self: end;
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  body:has(.error-page) .twohr {
+    width: auto !important;
+    margin-left: 2vw !important;
+    margin-right: 2vw !important;
+  }
+
+  body:has(.error-page) .bottom-margin {
+    width: auto !important;
+
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
+    padding-left: 2vw !important;
+    padding-right: 2vw !important;
+
+    display: grid !important;
+    grid-template-columns: 1fr auto 1fr !important;
+    align-items: center !important;
+
+    box-sizing: border-box !important;
+  }
+
+  body:has(.error-page) .bottom-margin .number {
+    justify-self: start !important;
+    text-align: left !important;
+  }
+
+  body:has(.error-page) .bottom-margin .better-name {
+    justify-self: center !important;
+    text-align: center !important;
+  }
+
+  body:has(.error-page) .bottom-margin .telegram-channel {
+    justify-self: end !important;
+    text-align: right !important;
+  }
+}
